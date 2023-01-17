@@ -1,5 +1,5 @@
 # Rent Dynamics 
-==============
+=====
 
 Here is my solution to the problem, I used a React frontend and a Python flask backend. I've also provided two separate ways to run the app (in case you don't have docker installed)
 

@@ -1,5 +1,5 @@
 # Dog Breeds API
-==============
+=====
 
 This is a simple web application built using the Flask web framework that allows users to retrieve a list of all dog breeds and their variants, as well as retrieve a random image of a specific dog breed and variant.
 

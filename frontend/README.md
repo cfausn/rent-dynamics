@@ -1,5 +1,5 @@
 # Dog Breeds Frontend
-==============
+=====
 
 This is a standard create-react-app that displays a list of dog breeds and their variants. The app allows the user to search for specific breeds and variants, paginate through the results, and sort the results by different columns.
 
