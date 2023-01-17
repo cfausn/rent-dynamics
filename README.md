@@ -22,6 +22,5 @@ Here is my solution to the problem, I used a React frontend and a Python flask b
 ## Dependencies
 ------------
 
--   react
--   react-dom
--   axios
+-   python3
+-   npm
