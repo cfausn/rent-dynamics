@@ -1,10 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import React from 'react';
 import Breeds from './components/Breeds.js'
 import './App.css';
 
 const App = () => {
-
   return (
     <Breeds/>
   );
