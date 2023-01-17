@@ -1,0 +1,25 @@
+version: '3.7'
+
+services:
+  rent-dynamics-backend:
+    build: 
+      context: backend/
+      dockerfile: Dockerfile
+    ports:
+      - 5000:5000
+
+  rent-dynamics-frontend:
+    container_name: rent-dynamics-frontend
+    build:
+      context: frontend/
+      dockerfile: Dockerfile
+    volumes:
+      - '.:/frontend'
+      - '/frontend/node_modules'
+    ports:
+      - 3000:3000
+    links:
+      - rent-dynamics-backend
+    environment:
+      - CHOKIDAR_USEPOLLING=true  
+    stdin_open: true   
