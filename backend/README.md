@@ -3,13 +3,6 @@
 
 This is a simple web application built using the Flask web framework that allows users to retrieve a list of all dog breeds and their variants, as well as retrieve a random image of a specific dog breed and variant.
 
-## Requirements
-------------
-
--   Flask
--   Flask-Cors
--   requests
-
 ## Installation
 ------------
 
@@ -27,9 +20,17 @@ The application has two main endpoints:
 
 To run the application:
 
-`python app.py`
+`flask run --host 0.0.0.0`
 
 ## Note
 ----
 
 The code uses the public dog breeds API <https://dog.ceo/dog-api/documentation/breeds-list>, which lists all breeds and their variants. It also gets the random image from the same API by sending a GET request to the API with breed and sub-breed
+
+
+## Dependencies
+------------
+
+-   Flask
+-   Flask-Cors
+-   requests
