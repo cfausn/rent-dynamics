@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.table-header {
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-bottom: '2px solid black';
+}
+
+.table-data {
+  font-size: 1rem;
+  padding: 10px;
+}
+
+.image {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  position: absolute;
+  top: 50px;
+  left:50px;
+}
