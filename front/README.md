@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# Dog Breeds Frontend
+=====
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a standard create-react-app that displays a list of dog breeds and their variants. The app allows the user to search for specific breeds and variants, paginate through the results, and sort the results by different columns.
 
-## Available Scripts
+## Installation
+------------
 
-In the project directory, you can run:
+1.  Install the dependencies: `npm install`
+2.  Start the development server: `npm start`
 
-### `npm start`
+## Usage
+-----
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1.  Open <http://localhost:3000> to view the app in the browser.
+2.  Use the search bar to filter the list of breeds and variants by breed name or variant name.
+3.  Use the "Breeds Per Page" input to change the number of breeds displayed per page.
+4.  Use the pagination controls at the bottom of the page to navigate through the pages.
+5.  Click on the headers of the table columns (Breed, Variant, Number of Variants, Image) to sort the list by that column in ascending or descending order.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Component
+---------
 
-### `npm test`
+The Breeds component is the main component of the app. It renders a search bar, pagination controls, and a table that displays the list of breeds and variants. The component makes a GET request to an API endpoint to fetch the data for the breeds and variants, and uses state hooks to store the data, search text, current page number, and number of breeds per page. The component also includes logic for filtering, pagination and sorting the data based on user inputs.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## API
+---
 
-### `npm run build`
+The API endpoint that the component makes a GET request to is located at `http://localhost:5000/breeds`. This endpoint should return a JSON object containing the data for the breeds and variants, as well as images for those variants.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Dependencies
+------------
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+-   react
+-   react-dom
+-   axios
