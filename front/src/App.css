@@ -8,6 +8,7 @@
   width: 80%;
   text-align: center;
   margin: 0 auto;
+  padding-top: 100px;
 }
 
 .table-header {
@@ -34,6 +35,26 @@
   justify-content: center;
   margin-bottom: 20px;
   position: absolute;
-  top: 50px;
-  left:50px;
+  top: 25px;
+}
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  top:25px;
+  right:200px;
+  position: absolute;
+}
+
+.page-number {
+  padding: 8px;
+  margin: 0 8px;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+
+.page-number.active {
+  background-color: gray;
+  color: white;
 }
